@@ -1,0 +1,2 @@
+slam01
+-DCATKIN_DEVEL_PREFIX=/media/hongfeng/OS/code_c/BUILD_A_SLAM_Bymyself/devel -DCMAKE_INSTALL_PREFIX=/media/hongfeng/OS/code_c/BUILD_A_SLAM_Bymyself/install -G Unix Makefiles
