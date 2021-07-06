@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/hongfeng/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/hongfeng/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/hongfeng/libtorch/include/**",
+        "/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/**",
+        "/usr/include/**",
+        "/usr/local/cuda-11.1/targets/x86_64-linux/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

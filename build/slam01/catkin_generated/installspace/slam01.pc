@@ -1,0 +1,8 @@
+prefix=/home/hongfeng/CV/build_a_slam_bymyself/install
+
+Name: slam01
+Description: Description of slam01
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy

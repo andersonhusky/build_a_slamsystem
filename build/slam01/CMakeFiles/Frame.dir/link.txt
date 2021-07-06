@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libFrame.so -o /home/hongfeng/CV/build_a_slam_bymyself/devel/lib/libFrame.so CMakeFiles/Frame.dir/src/Frame.cpp.o 
