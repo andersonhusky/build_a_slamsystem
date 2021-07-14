@@ -34,8 +34,11 @@ void Vio::Track(const torch::Tensor &im_tensor, const cv::Mat &im, const double 
     VioImgTensor = im_tensor;
     VioImgGray = im;
     
-    if(State==NO_IMAGES_YET)
+    if(State==NO_IMAGES_YET)    State = NOT_INITIALIZED;
+
+    if(State==NOT_INITIALIZED)
     {
+        // Initialization();
         NowFrame = Frame(im_tensor, im, frame_index, timestamp, Mnet);
         State = OK;
         SuperPointFind(im_tensor, im, timestamp);
@@ -55,7 +58,27 @@ void Vio::Track(const torch::Tensor &im_tensor, const cv::Mat &im, const double 
     cv::Mat Rcw;
     cv::Mat tcw;
     vector<bool> Triangulated;
-    
+
+    vector<cv::Point2f> Points0;
+    vector<cv::Point2f> Points1;
+    Points0.reserve(NowFrame.mkpts0.size(0));
+    Points1.reserve(NowFrame.mkpts1.size(0));
+    for(int i=0; i<Mkpts0.size(0); i++)
+    {
+        cv::Point2f point;
+        point.x = Mkpts0[i][0].item().toFloat();
+        point.y = Mkpts0[i][1].item().toFloat();
+        Points0.push_back(point);
+    }
+    for(int i=0; i<Mkpts1.size(0); i++)
+    {
+        cv::Point2f point;
+        point.x = Mkpts1[i][0].item().toFloat();
+        point.y = Mkpts1[i][1].item().toFloat();
+        Points1.push_back(point);
+    }
+
+    MoveConstruct.ReconstructFromTwoFrames(Points0, Points1, Rcw, tcw, IniP3D, Triangulated);
     NowFrame.Show();
 }
 
@@ -115,5 +138,4 @@ void Vio::SuperGlueMatching()
 
 void Vio::Initialization()
 {
-
 }

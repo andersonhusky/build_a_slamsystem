@@ -22,6 +22,7 @@
 
 #include"viosystem/Vio.h"
 #include"viosystem/Frame.h"
+#include"viosystem/Camera.h"
 
 using namespace std;
 
@@ -33,6 +34,7 @@ class ProcessImg
         Vio* mPVio;
         bool mnet;
         bool mbRGB=false;                                           // true为RGB，false为BGR
+        int count = 0;
     private:
 };
 
@@ -72,6 +74,12 @@ void ProcessImg::GetImage(const sensor_msgs::ImageConstPtr& msg)
     if(mnet)
     {
         const cv::Mat img_gray = img;                       // 灰度图
+        if(count==0||count == 5 || count==10)
+        {
+            string title = to_string(count);
+            cv::imwrite(title+".png", img);
+        }
+        count++;
         img.convertTo(img, CV_32FC3, 1.0f/255.0f);
         // tensor,(1,1,480,640),使用gpu
         const torch::Tensor img_tensor = torch::from_blob(img.data,{1, 480,640, 1}).permute({0, 3, 1, 2}).cuda();

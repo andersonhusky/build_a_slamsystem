@@ -376,6 +376,12 @@ CUDNN_STATIC:BOOL=OFF
 Caffe2_DIR:PATH=/home/hongfeng/libtorch/share/cmake/Caffe2
 
 //Dependencies for target
+Camera_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Construct2_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 Construct_LIB_DEPENDS:STATIC=
 
 //Path to a program.
@@ -434,6 +440,9 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=2
+
+//The directory containing a CMake configuration file for Pangolin.
+Pangolin_DIR:PATH=/home/hongfeng/Pangolin/build/src
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/hongfeng/CV/build_a_slam_bymyself/build

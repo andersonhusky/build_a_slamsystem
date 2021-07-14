@@ -134,6 +134,7 @@ include_directories(
 include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${TORCH_INCLUDE_DIRS})
 include_directories(/usr/local/cuda-11.1/targets/x86_64-linux/include)
+include_directories(/home/hongfeng/CV/build_a_slam_bymyself/src/slam01)
 
 
 
@@ -171,8 +172,19 @@ target_link_libraries(mission1 ${OpenCV_LIBRARIES})
 target_link_libraries(mission1  Frame ${catkin_LIBRARIES})
 target_link_libraries(mission1  Vio ${catkin_LIBRARIES})
 target_link_libraries(mission1  Construct ${catkin_LIBRARIES})
+target_link_libraries(mission1  Camera ${catkin_LIBRARIES})
 target_link_libraries(mission1 ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(mission1 ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so)
 set_property(TARGET mission1 PROPERTY CXX_STANDARD 14)
+
+add_executable(example1 src/test.cpp)
+target_link_libraries(example1 ${OpenCV_LIBRARIES})
+target_link_libraries(example1  Construct ${catkin_LIBRARIES})
+target_link_libraries(example1  Camera ${catkin_LIBRARIES})
+target_link_libraries(example1 ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(example1 ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so)
+set_property(TARGET example1 PROPERTY CXX_STANDARD 14)
+
 
 #############
 ## Install ##
@@ -235,4 +247,6 @@ set_property(TARGET mission1 PROPERTY CXX_STANDARD 14)
 add_library(Frame src/Frame.cpp)
 add_library(Vio src/Vio.cpp)
 add_library(Construct src/Construct.cpp)
+add_library(Camera src/Camera.cpp)
 # add_dependencies(Frame ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+aux_source_directory(. hongfeng)

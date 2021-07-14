@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+..//Thirdparty/DBoW2/DUtils/Random.h
+cstdlib
+-
+vector
+-
+
 /home/hongfeng/CV/build_a_slam_bymyself/src/example/example-app.cpp
 torch/torch.h
 -
@@ -21,6 +27,24 @@ opencv2/core/core.hpp
 -
 opencv2/opencv.hpp
 -
+viosystem/Construct111.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/example/viosystem/Construct111.h
+
+/home/hongfeng/CV/build_a_slam_bymyself/src/example/viosystem/Construct111.h
+string
+-
+iostream
+-
+opencv2/core/persistence.hpp
+-
+opencv2/highgui.hpp
+-
+torch/torch.h
+-
+torch/script.h
+-
+Thirdparty/DBoW2/DUtils/Random.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/example/viosystem/Thirdparty/DBoW2/DUtils/Random.h
 
 /home/hongfeng/libtorch/include/ATen/ATen.h
 c10/core/Allocator.h
@@ -5288,83 +5312,83 @@ torch/custom_class.h
 ATen/ATen.h
 -
 
-/usr/local/cuda-11.1/include/builtin_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/builtin_types.h
 device_types.h
-/usr/local/cuda-11.1/include/device_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/device_types.h
 driver_types.h
-/usr/local/cuda-11.1/include/driver_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/driver_types.h
 surface_types.h
-/usr/local/cuda-11.1/include/surface_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/surface_types.h
 texture_types.h
-/usr/local/cuda-11.1/include/texture_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/texture_types.h
 vector_types.h
-/usr/local/cuda-11.1/include/vector_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/vector_types.h
 
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 
-/usr/local/cuda-11.1/include/cuda.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda.h
 stdlib.h
 -
 stdint.h
 -
 
-/usr/local/cuda-11.1/include/cuda_bf16.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_bf16.h
 cuda_bf16.hpp
-/usr/local/cuda-11.1/include/cuda_bf16.hpp
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_bf16.hpp
 
-/usr/local/cuda-11.1/include/cuda_bf16.hpp
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_bf16.hpp
 utility
 -
 cstring
 -
 
-/usr/local/cuda-11.1/include/cuda_device_runtime_api.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_device_runtime_api.h
 driver_types.h
-/usr/local/cuda-11.1/include/driver_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/driver_types.h
 crt/host_defines.h
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 
-/usr/local/cuda-11.1/include/cuda_fp16.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_fp16.h
 cuda_fp16.hpp
-/usr/local/cuda-11.1/include/cuda_fp16.hpp
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_fp16.hpp
 
-/usr/local/cuda-11.1/include/cuda_fp16.hpp
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_fp16.hpp
 utility
 -
 cstring
 -
 
-/usr/local/cuda-11.1/include/cuda_runtime_api.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_runtime_api.h
 crt/host_defines.h
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 builtin_types.h
-/usr/local/cuda-11.1/include/builtin_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/builtin_types.h
 cuda_device_runtime_api.h
-/usr/local/cuda-11.1/include/cuda_device_runtime_api.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/cuda_device_runtime_api.h
 
-/usr/local/cuda-11.1/include/device_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/device_types.h
 crt/host_defines.h
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 
-/usr/local/cuda-11.1/include/driver_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/driver_types.h
 crt/host_defines.h
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 vector_types.h
-/usr/local/cuda-11.1/include/vector_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/vector_types.h
 limits.h
 -
 stddef.h
 -
 
-/usr/local/cuda-11.1/include/surface_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/surface_types.h
 driver_types.h
-/usr/local/cuda-11.1/include/driver_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/driver_types.h
 
-/usr/local/cuda-11.1/include/texture_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/texture_types.h
 driver_types.h
-/usr/local/cuda-11.1/include/driver_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/driver_types.h
 
-/usr/local/cuda-11.1/include/thrust/complex.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/complex.h
 thrust/detail/config.h
 -
 cmath
@@ -5378,7 +5402,7 @@ thrust/detail/type_traits.h
 thrust/detail/complex/complex.inl
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/arithmetic.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/arithmetic.h
 thrust/complex.h
 -
 cfloat
@@ -5388,7 +5412,7 @@ cmath
 thrust/detail/complex/c99math.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/c99math.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/c99math.h
 math.h
 -
 cmath
@@ -5398,7 +5422,7 @@ thrust/detail/complex/math_private.h
 complex
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/catrig.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/catrig.h
 thrust/detail/config.h
 -
 thrust/complex.h
@@ -5410,7 +5434,7 @@ cfloat
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/catrigf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/catrigf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
@@ -5422,43 +5446,43 @@ cfloat
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/ccosh.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/ccosh.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/ccoshf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/ccoshf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/cexp.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/cexp.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/cexpf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/cexpf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/clog.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/clog.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/clogf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/clogf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/complex.inl
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/complex.inl
 thrust/complex.h
 -
 thrust/type_traits/is_trivially_relocatable.h
@@ -5500,13 +5524,13 @@ thrust/detail/complex/catrigf.h
 thrust/detail/complex/stream.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/cpow.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/cpow.h
 thrust/complex.h
 -
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/cproj.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/cproj.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
@@ -5514,27 +5538,19 @@ thrust/detail/complex/math_private.h
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/csinh.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/csinh.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/csinhf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/csinhf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/csqrt.h
-thrust/complex.h
--
-thrust/detail/complex/math_private.h
--
-cmath
--
-
-/usr/local/cuda-11.1/include/thrust/detail/complex/csqrtf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/csqrt.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
@@ -5542,7 +5558,7 @@ thrust/detail/complex/math_private.h
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/ctanh.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/csqrtf.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
@@ -5550,7 +5566,7 @@ thrust/detail/complex/math_private.h
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/ctanhf.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/ctanh.h
 thrust/complex.h
 -
 thrust/detail/complex/math_private.h
@@ -5558,7 +5574,15 @@ thrust/detail/complex/math_private.h
 cmath
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/math_private.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/ctanhf.h
+thrust/complex.h
+-
+thrust/detail/complex/math_private.h
+-
+cmath
+-
+
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/math_private.h
 thrust/detail/config.h
 -
 thrust/complex.h
@@ -5568,19 +5592,19 @@ thrust/detail/cstdint.h
 thrust/detail/complex/c99math.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/complex/stream.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/complex/stream.h
 thrust/complex.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config.h
 thrust/version.h
 -
 thrust/detail/config/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/compiler.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/compiler.h
 
-/usr/local/cuda-11.1/include/thrust/detail/config/config.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/config.h
 thrust/detail/config/simple_defines.h
 -
 thrust/detail/config/compiler.h
@@ -5606,55 +5630,55 @@ thrust/detail/config/exec_check_disable.h
 thrust/detail/config/global_workarounds.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/cpp_compatibility.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/cpp_compatibility.h
 thrust/detail/config/cpp_dialect.h
 -
 cstddef
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/cpp_dialect.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/cpp_dialect.h
 thrust/detail/config/compiler.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/debug.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/debug.h
 
-/usr/local/cuda-11.1/include/thrust/detail/config/deprecated.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/deprecated.h
 thrust/detail/config/compiler.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/device_system.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/device_system.h
 
-/usr/local/cuda-11.1/include/thrust/detail/config/exec_check_disable.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/exec_check_disable.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/forceinline.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/forceinline.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/global_workarounds.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/global_workarounds.h
 thrust/detail/config/compiler.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/host_device.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/host_device.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/config/host_system.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/host_system.h
 
-/usr/local/cuda-11.1/include/thrust/detail/config/simple_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/config/simple_defines.h
 
-/usr/local/cuda-11.1/include/thrust/detail/cstdint.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/cstdint.h
 stdint.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/execution_policy.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/execution_policy.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/preprocessor.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/preprocessor.h
 
-/usr/local/cuda-11.1/include/thrust/detail/static_assert.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/static_assert.h
 thrust/detail/config.h
 -
 thrust/detail/type_traits.h
@@ -5662,7 +5686,7 @@ thrust/detail/type_traits.h
 thrust/detail/preprocessor.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/type_traits.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/type_traits.h
 thrust/detail/config.h
 -
 type_traits
@@ -5670,23 +5694,23 @@ type_traits
 thrust/detail/type_traits/has_trivial_assign.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/type_traits/has_nested_type.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/type_traits/has_nested_type.h
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/type_traits/has_trivial_assign.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/type_traits/has_trivial_assign.h
 thrust/detail/config.h
 -
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/type_traits/is_metafunction_defined.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/type_traits/is_metafunction_defined.h
 thrust/detail/type_traits/has_nested_type.h
 -
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/detail/type_traits/pointer_traits.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/detail/type_traits/pointer_traits.h
 thrust/detail/config.h
 -
 thrust/detail/type_traits.h
@@ -5700,21 +5724,21 @@ thrust/iterator/iterator_traits.h
 cstddef
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/any_system_tag.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/any_system_tag.h
 thrust/detail/config.h
 -
 thrust/detail/execution_policy.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/device_system_tag.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/device_system_tag.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/host_system_tag.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/host_system_tag.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/iterator_category_to_system.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/iterator_category_to_system.h
 thrust/detail/config.h
 -
 thrust/iterator/iterator_categories.h
@@ -5730,7 +5754,7 @@ thrust/iterator/detail/any_system_tag.h
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/iterator_category_to_traversal.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/iterator_category_to_traversal.h
 thrust/detail/config.h
 -
 thrust/iterator/iterator_categories.h
@@ -5742,11 +5766,11 @@ thrust/iterator/detail/iterator_category_to_system.h
 thrust/detail/type_traits.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/iterator_category_with_system_and_traversal.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/iterator_category_with_system_and_traversal.h
 thrust/detail/config.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/iterator_traits.inl
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/iterator_traits.inl
 thrust/iterator/iterator_categories.h
 -
 thrust/iterator/detail/iterator_category_to_traversal.h
@@ -5756,15 +5780,15 @@ thrust/detail/type_traits.h
 thrust/type_traits/void_t.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/iterator_traversal_tags.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/iterator_traversal_tags.h
 
-/usr/local/cuda-11.1/include/thrust/iterator/detail/universal_categories.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/detail/universal_categories.h
 thrust/detail/config.h
 -
 thrust/iterator/iterator_categories.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/iterator_categories.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/iterator_categories.h
 thrust/detail/config.h
 -
 thrust/iterator/detail/iterator_category_with_system_and_traversal.h
@@ -5778,7 +5802,7 @@ iterator
 thrust/iterator/detail/universal_categories.h
 -
 
-/usr/local/cuda-11.1/include/thrust/iterator/iterator_traits.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/iterator/iterator_traits.h
 thrust/detail/config.h
 -
 thrust/type_traits/void_t.h
@@ -5796,13 +5820,13 @@ thrust/iterator/detail/any_system_tag.h
 thrust/iterator/detail/iterator_traits.inl
 -
 
-/usr/local/cuda-11.1/include/thrust/system/cuda/detail/guarded_cuda_runtime_api.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/system/cuda/detail/guarded_cuda_runtime_api.h
 thrust/detail/config.h
 -
 cuda_runtime_api.h
 -
 
-/usr/local/cuda-11.1/include/thrust/type_traits/is_contiguous_iterator.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/type_traits/is_contiguous_iterator.h
 thrust/detail/config.h
 -
 thrust/detail/type_traits.h
@@ -5820,7 +5844,7 @@ array
 string_view
 -
 
-/usr/local/cuda-11.1/include/thrust/type_traits/is_trivially_relocatable.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/type_traits/is_trivially_relocatable.h
 thrust/detail/config.h
 -
 thrust/detail/static_assert.h
@@ -5834,17 +5858,17 @@ type_traits
 thrust/system/cuda/detail/guarded_cuda_runtime_api.h
 -
 
-/usr/local/cuda-11.1/include/thrust/type_traits/void_t.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/type_traits/void_t.h
 thrust/detail/config.h
 -
 type_traits
 -
 
-/usr/local/cuda-11.1/include/thrust/version.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/thrust/version.h
 
-/usr/local/cuda-11.1/include/vector_types.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/vector_types.h
 crt/host_defines.h
-/usr/local/cuda-11.1/include/crt/host_defines.h
+/usr/local/cuda-11.1/targets/x86_64-linux/include/crt/host_defines.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

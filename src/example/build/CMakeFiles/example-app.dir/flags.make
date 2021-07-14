@@ -6,5 +6,5 @@ CXX_FLAGS =   -D_GLIBCXX_USE_CXX11_ABI=1 -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hongfeng/CV/build_a_slam_bymyself/src/example/include -isystem /usr/local/include -isystem /usr/local/include/opencv -isystem /home/hongfeng/libtorch/include -isystem /home/hongfeng/libtorch/include/torch/csrc/api/include -isystem /usr/local/cuda-11.1/include 
+CXX_INCLUDES = -I/home/hongfeng/CV/build_a_slam_bymyself/src/example/include -isystem /usr/local/include -isystem /usr/local/include/opencv -isystem /home/hongfeng/libtorch/include -isystem /home/hongfeng/libtorch/include/torch/csrc/api/include -I/usr/local/cuda-11.1/targets/x86_64-linux/include -I/home/hongfeng/CV/build_a_slam_bymyself/src/example -isystem /usr/local/cuda-11.1/include 
 

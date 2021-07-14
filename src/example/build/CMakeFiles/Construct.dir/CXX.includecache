@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hongfeng/CV/build_a_slam_bymyself/src/example/Construct.cpp
+viosystem/Construct.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/example/viosystem/Construct.h
+thread
+-
+

@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/Thirdparty/DBoW2/DUtils/Random.h
+cstdlib
+-
+vector
+-
+
+/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Camera.h
+string
+-
+iostream
+-
+opencv2/core/persistence.hpp
+-
+opencv2/highgui.hpp
+-
+
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Construct.h
 string
 -
@@ -19,6 +35,10 @@ torch/torch.h
 -
 torch/script.h
 -
+c10/cuda/CUDACachingAllocator.h
+-
+Thirdparty/DBoW2/DUtils/Random.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Thirdparty/DBoW2/DUtils/Random.h
 
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Frame.h
 ros/ros.h
@@ -49,6 +69,8 @@ Frame.h
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Frame.h
 Construct.h
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Construct.h
+Camera.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/include/viosystem/Camera.h
 c10/cuda/CUDACachingAllocator.h
 -
 
@@ -81,6 +103,8 @@ viosystem/Vio.h
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/src/viosystem/Vio.h
 viosystem/Frame.h
 /home/hongfeng/CV/build_a_slam_bymyself/src/slam01/src/viosystem/Frame.h
+viosystem/Camera.h
+/home/hongfeng/CV/build_a_slam_bymyself/src/slam01/src/viosystem/Camera.h
 
 /home/hongfeng/libtorch/include/ATen/ATen.h
 c10/core/Allocator.h

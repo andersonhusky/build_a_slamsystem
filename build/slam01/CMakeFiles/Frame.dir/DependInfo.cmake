@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/hongfeng/libtorch/include"
   "/home/hongfeng/libtorch/include/torch/csrc/api/include"
   "/usr/local/cuda-11.1/targets/x86_64-linux/include"
+  "/home/hongfeng/CV/build_a_slam_bymyself/src/slam01"
   )
 
 # Targets to which this target links.

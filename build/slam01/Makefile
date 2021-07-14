@@ -101,6 +101,18 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -122,18 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -408,6 +408,21 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+slam01/CMakeFiles/Camera.dir/rule:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f CMakeFiles/Makefile2 slam01/CMakeFiles/Camera.dir/rule
+.PHONY : slam01/CMakeFiles/Camera.dir/rule
+
+# Convenience name for target.
+Camera: slam01/CMakeFiles/Camera.dir/rule
+
+.PHONY : Camera
+
+# fast build rule for target.
+Camera/fast:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Camera.dir/build.make slam01/CMakeFiles/Camera.dir/build
+.PHONY : Camera/fast
+
+# Convenience name for target.
 slam01/CMakeFiles/Construct.dir/rule:
 	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f CMakeFiles/Makefile2 slam01/CMakeFiles/Construct.dir/rule
 .PHONY : slam01/CMakeFiles/Construct.dir/rule
@@ -421,6 +436,21 @@ Construct: slam01/CMakeFiles/Construct.dir/rule
 Construct/fast:
 	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Construct.dir/build.make slam01/CMakeFiles/Construct.dir/build
 .PHONY : Construct/fast
+
+# Convenience name for target.
+slam01/CMakeFiles/example1.dir/rule:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f CMakeFiles/Makefile2 slam01/CMakeFiles/example1.dir/rule
+.PHONY : slam01/CMakeFiles/example1.dir/rule
+
+# Convenience name for target.
+example1: slam01/CMakeFiles/example1.dir/rule
+
+.PHONY : example1
+
+# fast build rule for target.
+example1/fast:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/example1.dir/build.make slam01/CMakeFiles/example1.dir/build
+.PHONY : example1/fast
 
 # Convenience name for target.
 slam01/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -481,6 +511,21 @@ geometry_msgs_generate_messages_eus: slam01/CMakeFiles/geometry_msgs_generate_me
 geometry_msgs_generate_messages_eus/fast:
 	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make slam01/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f CMakeFiles/Makefile2 slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 slam01/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -587,20 +632,32 @@ Frame/fast:
 	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Frame.dir/build.make slam01/CMakeFiles/Frame.dir/build
 .PHONY : Frame/fast
 
-# Convenience name for target.
-slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f CMakeFiles/Makefile2 slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+src/Camera.o: src/Camera.cpp.o
 
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : src/Camera.o
 
-.PHONY : sensor_msgs_generate_messages_lisp
+# target to build an object file
+src/Camera.cpp.o:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Camera.dir/build.make slam01/CMakeFiles/Camera.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
 
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make slam01/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
+src/Camera.i: src/Camera.cpp.i
+
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Camera.dir/build.make slam01/CMakeFiles/Camera.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/Camera.dir/build.make slam01/CMakeFiles/Camera.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
 
 src/Construct.o: src/Construct.cpp.o
 
@@ -710,6 +767,33 @@ src/mission1.cpp.s:
 	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/mission1.dir/build.make slam01/CMakeFiles/mission1.dir/src/mission1.cpp.s
 .PHONY : src/mission1.cpp.s
 
+src/test.o: src/test.cpp.o
+
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/example1.dir/build.make slam01/CMakeFiles/example1.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/example1.dir/build.make slam01/CMakeFiles/example1.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	cd /home/hongfeng/CV/build_a_slam_bymyself/build && $(MAKE) -f slam01/CMakeFiles/example1.dir/build.make slam01/CMakeFiles/example1.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -717,6 +801,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... Vio"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -727,20 +812,23 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... install"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... Camera"
 	@echo "... Construct"
 	@echo "... edit_cache"
+	@echo "... example1"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -750,8 +838,9 @@ help:
 	@echo "... test"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... Frame"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... install/local"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
 	@echo "... src/Construct.o"
 	@echo "... src/Construct.i"
 	@echo "... src/Construct.s"
@@ -764,6 +853,9 @@ help:
 	@echo "... src/mission1.o"
 	@echo "... src/mission1.i"
 	@echo "... src/mission1.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 

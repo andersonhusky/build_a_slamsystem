@@ -105,6 +105,8 @@ example-app: /usr/local/cuda-11.1/lib64/libnvrtc.so
 example-app: /usr/local/cuda-11.1/lib64/libnvToolsExt.so
 example-app: /usr/local/cuda-11.1/lib64/libcudart.so
 example-app: /home/hongfeng/libtorch/lib/libc10_cuda.so
+example-app: libConstruct.so
+example-app: ../Thirdparty/DBoW2/lib/libDBoW2.so
 example-app: /usr/local/lib/libopencv_calib3d.so.3.4.5
 example-app: /usr/local/lib/libopencv_features2d.so.3.4.5
 example-app: /usr/local/lib/libopencv_flann.so.3.4.5

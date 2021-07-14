@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9392/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9392.dir/build.make CMakeFiles/cmTC_a9392.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d0457/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0457.dir/build.make CMakeFiles/cmTC_d0457.dir/build
 make[1]: 进入目录“/home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a9392.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a9392.dir/CheckSymbolExists.c.o   -c /home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_a9392
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9392.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a9392.dir/CheckSymbolExists.c.o  -o cmTC_a9392 
-CMakeFiles/cmTC_a9392.dir/CheckSymbolExists.c.o：在函数‘main’中：
+Building C object CMakeFiles/cmTC_d0457.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d0457.dir/CheckSymbolExists.c.o   -c /home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d0457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0457.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d0457.dir/CheckSymbolExists.c.o  -o cmTC_d0457 
+CMakeFiles/cmTC_d0457.dir/CheckSymbolExists.c.o：在函数‘main’中：
 CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a9392.dir/build.make:97: recipe for target 'cmTC_a9392' failed
-make[1]: *** [cmTC_a9392] Error 1
+CMakeFiles/cmTC_d0457.dir/build.make:97: recipe for target 'cmTC_d0457' failed
+make[1]: *** [cmTC_d0457] Error 1
 make[1]: 离开目录“/home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp”
-Makefile:126: recipe for target 'cmTC_a9392/fast' failed
-make: *** [cmTC_a9392/fast] Error 2
+Makefile:126: recipe for target 'cmTC_d0457/fast' failed
+make: *** [cmTC_d0457/fast] Error 2
 
 File /home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9d3e9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9d3e9.dir/build.make CMakeFiles/cmTC_9d3e9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ac3bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac3bd.dir/build.make CMakeFiles/cmTC_ac3bd.dir/build
 make[1]: 进入目录“/home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_9d3e9.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9d3e9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_9d3e9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d3e9.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9d3e9.dir/CheckFunctionExists.c.o  -o cmTC_9d3e9 -lpthreads 
+Building C object CMakeFiles/cmTC_ac3bd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ac3bd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ac3bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac3bd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ac3bd.dir/CheckFunctionExists.c.o  -o cmTC_ac3bd -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_9d3e9.dir/build.make:97: recipe for target 'cmTC_9d3e9' failed
-make[1]: *** [cmTC_9d3e9] Error 1
+CMakeFiles/cmTC_ac3bd.dir/build.make:97: recipe for target 'cmTC_ac3bd' failed
+make[1]: *** [cmTC_ac3bd] Error 1
 make[1]: 离开目录“/home/hongfeng/CV/build_a_slam_bymyself/src/example/build/CMakeFiles/CMakeTmp”
-Makefile:126: recipe for target 'cmTC_9d3e9/fast' failed
-make: *** [cmTC_9d3e9/fast] Error 2
+Makefile:126: recipe for target 'cmTC_ac3bd/fast' failed
+make: *** [cmTC_ac3bd/fast] Error 2
 
 

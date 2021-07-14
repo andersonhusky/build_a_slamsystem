@@ -74,9 +74,9 @@ void Frame::AddMatching(at::Tensor &kpts0, at::Tensor &kpts1, int time_usd, int 
     for(int i=0; i<mkpts0.size(0); i++)
         {
             // to do..  在这里把匹配结果直接存储下来
-            cv::Point point_last(mkpts0[i][0].item().toInt(), mkpts0[i][1].item().toInt());
-            cv::Point point_now(mkpts1[i][0].item().toInt(), mkpts1[i][1].item().toInt());
-            cv::circle(mimg_gray, point_last, 2, cv::Scalar(0, 255, 0), -1);
+            cv::Point point_now(mkpts0[i][0].item().toInt(), mkpts0[i][1].item().toInt());
+            cv::Point point_last(mkpts1[i][0].item().toInt(), mkpts1[i][1].item().toInt());
+            cv::circle(mimg_gray, point_now, 2, cv::Scalar(0, 255, 0), -1);
             cv::line(mimg_gray, point_last, point_now, cv::Scalar(0, 0, 255), 2);
         }
 }

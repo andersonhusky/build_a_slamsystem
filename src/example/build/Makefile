@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/hongfeng/CV/build_a_slam_bymyself/src/example/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Construct
+
+# Build rule for target.
+Construct: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Construct
+.PHONY : Construct
+
+# fast build rule for target.
+Construct/fast:
+	$(MAKE) -f CMakeFiles/Construct.dir/build.make CMakeFiles/Construct.dir/build
+.PHONY : Construct/fast
+
+#=============================================================================
 # Target rules for targets named example-app
 
 # Build rule for target.
@@ -122,6 +135,33 @@ example-app: cmake_check_build_system
 example-app/fast:
 	$(MAKE) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/build
 .PHONY : example-app/fast
+
+Construct.o: Construct.cpp.o
+
+.PHONY : Construct.o
+
+# target to build an object file
+Construct.cpp.o:
+	$(MAKE) -f CMakeFiles/Construct.dir/build.make CMakeFiles/Construct.dir/Construct.cpp.o
+.PHONY : Construct.cpp.o
+
+Construct.i: Construct.cpp.i
+
+.PHONY : Construct.i
+
+# target to preprocess a source file
+Construct.cpp.i:
+	$(MAKE) -f CMakeFiles/Construct.dir/build.make CMakeFiles/Construct.dir/Construct.cpp.i
+.PHONY : Construct.cpp.i
+
+Construct.s: Construct.cpp.s
+
+.PHONY : Construct.s
+
+# target to generate assembly for a file
+Construct.cpp.s:
+	$(MAKE) -f CMakeFiles/Construct.dir/build.make CMakeFiles/Construct.dir/Construct.cpp.s
+.PHONY : Construct.cpp.s
 
 example-app.o: example-app.cpp.o
 
@@ -156,9 +196,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... Construct"
 	@echo "... example-app"
+	@echo "... Construct.o"
+	@echo "... Construct.i"
+	@echo "... Construct.s"
 	@echo "... example-app.o"
 	@echo "... example-app.i"
 	@echo "... example-app.s"

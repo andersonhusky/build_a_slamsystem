@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/hongfeng/libtorch/include"
   "/home/hongfeng/libtorch/include/torch/csrc/api/include"
   "/usr/local/cuda-11.1/targets/x86_64-linux/include"
+  "/home/hongfeng/CV/build_a_slam_bymyself/src/slam01"
   "/usr/local/cuda-11.1/include"
   )
 
@@ -34,6 +35,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/hongfeng/CV/build_a_slam_bymyself/build/slam01/CMakeFiles/Frame.dir/DependInfo.cmake"
   "/home/hongfeng/CV/build_a_slam_bymyself/build/slam01/CMakeFiles/Vio.dir/DependInfo.cmake"
   "/home/hongfeng/CV/build_a_slam_bymyself/build/slam01/CMakeFiles/Construct.dir/DependInfo.cmake"
+  "/home/hongfeng/CV/build_a_slam_bymyself/build/slam01/CMakeFiles/Camera.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

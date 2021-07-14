@@ -3,6 +3,7 @@
 
 #include "Frame.h"
 #include "Construct.h"
+#include "Camera.h"
 #include <c10/cuda/CUDACachingAllocator.h>
 
 class Vio
@@ -27,7 +28,8 @@ class Vio
                 SuperGlue.eval();
                 c10::cuda::CUDACachingAllocator::emptyCache();
             }
-            MoveConstruct = Construct(camera_path);
+            CameraModel = Camera(camera_path);
+            MoveConstruct = Construct(CameraModel.cK);
         };
 
         void FratureMatch(const cv::Mat &im, const double &timestamp);
@@ -44,6 +46,7 @@ class Vio
         LOST=3
         };
 
+        Camera CameraModel;
         eTrackingState State;
         bool start;                                                                 // 帧起点标志位
         int frame_index;                                                    // 关键帧信息
@@ -60,6 +63,7 @@ class Vio
         Frame NowFrame;
         Frame LastFrame;
         Construct MoveConstruct;
+        vector<cv::Point3f> IniP3D;       // 从匹配中恢复的3d点坐标
 
         bool Mnet;                                               // 确定传统模式还是神经网络模式
         int count=0;                                        // 调试用
